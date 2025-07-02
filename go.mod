@@ -1,4 +1,4 @@
-module github.com/haruyama480/scrape-articles/kubernetes-doc
+module github.com/haruyama480/scrape-articles
 
 go 1.24
 

@@ -1,9 +1,16 @@
+// kubernetes-doc/main.go
+// This file is part of the scrape-articles project.
+//
+// run:
+//
+//	go run main.go > kubernetes-doc.md
 package main
 
 import (
 	"context"
 	"fmt"
 	"log"
+	"math"
 	"strings"
 	"time"
 
@@ -62,10 +69,15 @@ func main() {
 	// 	fmt.Printf("%s, %s\n", item["href"], item["text"])
 	// }
 
+	minIndent := math.MaxInt
+	for _, item := range linksAndDepths {
+		minIndent = min(minIndent, int(item["depth"].(float64)))
+	}
+
 	var buffer strings.Builder
 	buffer.WriteString("# Kubernetes Documentation Links\n\n")
 	for _, item := range linksAndDepths {
-		indent := strings.Repeat("  ", int(item["depth"].(float64))-2)
+		indent := strings.Repeat("  ", int(item["depth"].(float64))-minIndent)
 		buffer.WriteString(fmt.Sprintf("%s- [%s](%s)\n", indent, item["text"], item["href"]))
 	}
 	fmt.Println(buffer.String())

@@ -1,5 +1,35 @@
 # Go Blog Posts
 
+- [Go’s Sweet 16](https://go.dev/blog/16years), 2025-11-14, Austin Clements, for the Go team
+  > Happy Birthday, Go!
+
+- [The Green Tea Garbage Collector](https://go.dev/blog/greenteagc), 2025-10-29, Michael Knyszek and Austin Clements
+  > Go 1.25 includes a new experimental garbage collector, Green Tea.
+
+- [Flight Recorder in Go 1.25](https://go.dev/blog/flight-recorder), 2025-09-26, Carlos Amedee and Michael Knyszek
+  > Go 1.25 introduces a new tool in the diagnostic toolbox, flight recording.
+
+- [It's survey time! How has Go has been working out for you?](https://go.dev/blog/survey2025-announce), 2025-09-16, Todd Kulesza, on behalf of the Go team
+  > Help shape the future of Go
+
+- [A new experimental Go API for JSON](https://go.dev/blog/jsonv2-exp), 2025-09-09, Joe Tsai, Daniel Martí, Johan Brandhorst-Satzkorn, Roger Peppe, Chris Hines, and Damien Neil
+  > Go 1.25 introduces experimental support for encoding/json/jsontext and encoding/json/v2 packages.
+
+- [Testing Time (and other asynchronicities)](https://go.dev/blog/testing-time), 2025-08-26, Damien Neil
+  > A discussion of testing asynchronous code and an exploration of the `testing/synctest` package. Based on the GopherCon Europe 2025 talk with the same title.
+
+- [Container-aware GOMAXPROCS](https://go.dev/blog/container-aware-gomaxprocs), 2025-08-20, Michael Pratt and Carlos Amedee
+  > New GOMAXPROCS defaults in Go 1.25 improve behavior in containers.
+
+- [Go 1.25 is released](https://go.dev/blog/go1.25), 2025-08-12, Dmitri Shuralyov, on behalf of the Go team
+  > Go 1.25 adds container-aware GOMAXPROCS, testing/synctest package, experimental GC, experimental encoding/json/v2, and more.
+
+- [The FIPS 140-3 Go Cryptographic Module](https://go.dev/blog/fips140), 2025-07-15, Filippo Valsorda (Geomys), Daniel McCarney (Geomys), and Roland Shoemaker (Google)
+  > Go now has a built-in, native FIPS 140-3 compliant mode.
+
+- [Generic interfaces](https://go.dev/blog/generic-interfaces), 2025-07-07, Axel Wagner
+  > Adding type parameters to interface types is surprisingly powerful
+
 - [[ On | No ] syntactic support for error handling](https://go.dev/blog/error-syntax), 2025-06-03, Robert Griesemer
   > Go team plans around error handling support
 
